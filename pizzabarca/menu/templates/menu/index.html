@@ -7,10 +7,9 @@
     <h1>Les pizzas</h1>
 
     <ul>
-        <li>LY19</li>
-        <li>RL9</li>
-        <li>Raphinha</li>
-        <li>Ter stegen</li>
+        {% for pizza in pizzas %}
+            <li>{{pizza.name}}</li>
+        {% endfor %}
     </ul>
 </body>
 </html>

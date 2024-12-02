@@ -9,4 +9,5 @@ def index(request):
     pizzas_name_and_price = [pizza.name + " : " + str(pizza.price) + "€" for pizza in pizzas]
     display_pizzas = ", ".join(pizzas_name_and_price)
     return HttpResponse(f"Les pizzas : {display_pizzas}")'''
-    return render(request, 'menu/index.html')
+    pizzas = Pizza.objects.all()
+    return render(request, 'menu/index.html', {'pizzas': pizzas} )
