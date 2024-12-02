@@ -2,5 +2,9 @@ from django.contrib import admin
 from.models import Pizza
 
 
+class PizzaAdmin(admin.ModelAdmin):
+    list_display = ('name', 'ingredients', 'vegetarian', 'price')
+
+
 # Register your models here.
-admin.site.register(Pizza)
+admin.site.register(Pizza, PizzaAdmin)

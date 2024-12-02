@@ -6,4 +6,7 @@ class Pizza(models.Model):
     price = models.FloatField(default=0)
     vegetarian = models.BooleanField(default=False)
 
+    def __str__(self):
+        return self.name
+
 
