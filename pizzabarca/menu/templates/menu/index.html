@@ -1,14 +1,17 @@
+{% load static %}
+
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
     <title>Menu des pizzas</title>
+    <link rel="stylesheet" href="{% static 'menu/style.css' %}" }>
 </head>
 <body>
     <h1>Les pizzas</h1>
 
     <ul>
         {% for pizza in pizzas %}
-            <li>{{pizza.name}}</li>
+            <li>{{pizza.name}} : {{pizza.price}}€</li>
         {% endfor %}
     </ul>
 </body>
