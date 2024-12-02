@@ -5,7 +5,8 @@ from .models import Pizza
 # Create your views here.
 
 def index(request):
-    pizzas = Pizza.objects.all()
+    '''pizzas = Pizza.objects.all()
     pizzas_name_and_price = [pizza.name + " : " + str(pizza.price) + "€" for pizza in pizzas]
     display_pizzas = ", ".join(pizzas_name_and_price)
-    return HttpResponse(f"Les pizzas : {display_pizzas}")
+    return HttpResponse(f"Les pizzas : {display_pizzas}")'''
+    return render(request, 'menu/index.html')
