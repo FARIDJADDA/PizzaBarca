@@ -30,7 +30,7 @@ h1 {
 }
 
 .menu_list {
-    margin-left: 30px;
+    margin-left: 50px;
 }
 
 .menu_list_item {
@@ -40,4 +40,23 @@ h1 {
 .menu_list_title {
     font-weight: bold;
     font-size: 20px;
+    display: inline-block;
+    width: 350px;
+}
+
+.menu_list_price {
+    font-size: 22px;
+    color: #DD7935;
+    display: inline-block;
+    width: 80px;
+    margin-left: 10px;
+    text-align: right;
+}
+
+.menu_list_ingredient {
+    font-size: 14px;
+    color: #C8C8C8;
+    margin-top: 5px;
+     width: 320px;
+    display: block;
 }
