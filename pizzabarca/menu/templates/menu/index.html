@@ -15,11 +15,14 @@
 
     <div class="menu_list">
             {% for pizza in pizzas %}
-                <div class="menu_list_item">
-                    <span class="menu_list_title">{{pizza.name}}</span>
-                    <span class="menu_list_price">{{pizza.price | floatformat:2}}€</span>
-                    <span class="menu_list_ingredient">{{pizza.ingredients}}€</span>
-                </div>
+                    <div class="menu_list_item">
+                        <span class="menu_list_title">{{pizza.name}}</span>
+                        <span class="menu_list_price">{{pizza.price | floatformat:2}}€</span>
+                        <span class="menu_list_ingredient">{{pizza.ingredients}}€</span>
+                        {% if pizza.vegetarian %}
+                            <span class="menu_list_badge">Végétarienne</span>
+                        {% endif %}
+                    </div>
             {% endfor %}
     </div>
 
