@@ -1,4 +1,4 @@
-h1, li {
+li {
     color: orange;
 }
 
@@ -8,9 +8,36 @@ body {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+    color: white;
+    margin: 0px;
+    font-family: Arial;
 }
 
 #small_logo {
     margin-top: 25px;
     margin-left: 35px;
+}
+
+h1 {
+    background-color: #DD7935;
+    display: inline;
+    padding: 8px 22px;
+}
+
+.menu_title {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.menu_list {
+    margin-left: 30px;
+}
+
+.menu_list_item {
+    margin: 30px 0px
+}
+
+.menu_list_title {
+    font-weight: bold;
+    font-size: 20px;
 }

@@ -9,12 +9,17 @@
 <body>
     <img id="small_logo" src="{% static 'menu/images/PizzaBarça.png' %}">
 
-    <h1>Les pizzas</h1>
+    <div class="menu_title">
+        <h1>Nos pizzas</h1>
+    </div>
 
-    <ul>
-        {% for pizza in pizzas %}
-            <li>{{pizza.name}} : {{pizza.price}}€</li>
-        {% endfor %}
-    </ul>
+    <div class="menu_list">
+            {% for pizza in pizzas %}
+                <div class="menu_list_item">
+                    <span class="menu_list_title">{{pizza.name}}</span>
+                </div>
+            {% endfor %}
+    </div>
+
 </body>
 </html>
